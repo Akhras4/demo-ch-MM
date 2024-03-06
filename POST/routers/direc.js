@@ -15,6 +15,4 @@ router.post("/add/:id",fun.artIddel)
 router.get("/edit",fun.artedit)
 router.post("/edit",fun.artedit)
 
-
-
 module.exports=router

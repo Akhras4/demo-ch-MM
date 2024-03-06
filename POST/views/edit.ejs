@@ -6,12 +6,13 @@
     <title>edit</title>
 </head>
 <body>
+    <a href="/arti">back</a>
     <form action="/edit" method="post">
         <label for="tit">assss</label>
         <input id="tit" type="text" name="Title" value="<%=article.Title%>">
         <label for="desc">saaaaaaa</label>
         <input id="desc" type="text" name="Article" value="<%= article.Article %>">
-        <input type="submit" name="submit">
+        <input type="submit" name="submit" value="save">
     </form>
 </body>
 </html>
