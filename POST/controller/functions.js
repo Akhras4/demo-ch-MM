@@ -11,7 +11,7 @@ const querystring = require('querystring');
 
 function addart(req, res) {
     if (req.method === "POST") {
-        GetSavedata()
+        GetSavedata(req, res)
     } else if (req.method === "GET") {
         res.render("addartical");
     }
