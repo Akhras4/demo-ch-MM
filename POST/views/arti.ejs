@@ -8,14 +8,14 @@
 <body>
     <div>
         <h1>first art</h1>
-        <a href="/add">addart</a>
+        <a href="/add">ADD Post</a>
         <p> hallo world</p>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, nisi aliquid, dolorem debitis ipsa nobis optio, possimus pariatur ad dolore illum perspiciatis explicabo veritatis blanditiis quam voluptas minima nostrum. Placeat.</p>
     </div>
     <% if( A == true ){ %>
         <% for(let i=articles.length-1 ; i >0 ; i--){ %>
             <h1><%=articles[i].Title%></h1>
-            <a href="/add/<%= articles[i]._id %>">addart</a>
+            <a href="/add/<%= articles[i]._id %>">Show the post</a>
             <p> <%= articles[i].Article %></p>
 
          <%}%>  
