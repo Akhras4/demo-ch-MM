@@ -80,14 +80,7 @@ const artedit = ((req, res) => {
             const Title = formData.Title;
             const Article = formData.Article;
             Articleblog.findByIdAndUpdate(flag, { Title, Article })
-                .then(() => Articleblog.find())
-                .then(articles => {
-                    res.render("arti", { articles, A: true });
-                })
-                .catch(error => {
-                    console.error("Error adding article:", error);
-                    res.status(500).send("Error adding article");
-                })
+                       .then(()=>res.redirect("/arti"));    
         })
     }
 
