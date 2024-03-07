@@ -1,5 +1,5 @@
 const { model } = require('mongoose');
-const Articleblog=require("../modules/db")
+const Articleblog = require("../modules/db")
 const querystring = require('querystring');
 
 const art = ((req, res) => {
@@ -80,10 +80,9 @@ const artedit = ((req, res) => {
             const Title = formData.Title;
             const Article = formData.Article;
             Articleblog.findByIdAndUpdate(flag, { Title, Article })
-                       .then(()=>res.redirect("/arti"));    
+                .then(() => res.redirect("/arti"));
         })
     }
-
 })
 module.exports={
 art,
